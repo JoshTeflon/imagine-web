@@ -8,11 +8,25 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        "grey": "#6E6D6D",
+        "dark": "#2D2C2C",
+        "primary": "#175DCD",
+        "secondary": "#2264CE",
+        "low": "#DAD6D6",
+        "darkBlue": "#0A234A",
+        "lowBlue": "#9BA6B6",
+        "highBlue": "#6B91CD",
       },
+      boxShadow: {
+        'serviceCard': "0px 8px 4px 0px #0000001F",
+        'hoverServiceCard': "0px 6px 22px -20px #00000059",
+      },
+    },
+  },
+  variants: {
+    extend: {
+      boxShadow: ['hover'],
     },
   },
   plugins: [],
