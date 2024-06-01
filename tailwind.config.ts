@@ -17,10 +17,12 @@ const config: Config = {
         "darkBlue": "#0A234A",
         "lowBlue": "#9BA6B6",
         "highBlue": "#6B91CD",
+        "card": "#D9D9D9",
       },
       boxShadow: {
         'serviceCard': "0px 8px 4px 0px #0000001F",
         'hoverServiceCard': "0px 6px 22px -20px #00000059",
+        'hoverSkillCard': "0px 8px 35px -20px #6B91CD73",
       },
     },
   },
