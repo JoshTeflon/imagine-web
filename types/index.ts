@@ -16,8 +16,13 @@ export interface SocialLinks {
   url: string
 }
 
-export interface Services {
+export interface Service {
   src: StaticImageData
   title: string
   body: string
+}
+
+export interface Skill {
+  src: StaticImageData
+  skill: string
 }

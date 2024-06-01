@@ -1,5 +1,5 @@
 import { Email, Facebook, Instagram, Linkedin } from "@/components/icons";
-import { AboutDetails, NavItem, Services, SocialLinks } from "@/types";
+import { AboutDetails, NavItem, Service, Skill, SocialLinks } from "@/types";
 import ictBusinessEducation from "@/assets/ictBusinessEducation.png";
 import databaseManagement from "@/assets/databaseManagement.png";
 import devops from "@/assets/devops.png";
@@ -9,6 +9,18 @@ import programmingTraining from "@/assets/programmingTraining.png";
 import agile from "@/assets/agile.png";
 import businessAnalysis from "@/assets/businessAnalysis.png";
 import trainingCertification from "@/assets/trainingCertification.png";
+import trainingSkill from "@/assets/trainingSkill.png";
+import mobileWebSkill from "@/assets/mobileWebSkill.png";
+import consultingStrategySkill from "@/assets/consultingStrategySkill.png";
+import virtualAugRealitySkill from "@/assets/virtualAugRealitySkill.png";
+import cyberSecuritySkill from "@/assets/cyberSecuritySkill.png";
+import machineLearningSkill from "@/assets/machineLearningSkill.png";
+import hardwareSkill from "@/assets/hardwareSkill.png";
+import projectManagementSkill from "@/assets/projectManagementSkill.png";
+import customerSupportSkill from "@/assets/customerSupportSkill.png";
+import dataAnalysisSkill from "@/assets/dataAnalysisSkill.png";
+import digitalMarketingSkill from "@/assets/digitalMarketingSkill.png";
+import enterpriseResourceSkill from "@/assets/enterpriseResourceSkill.png";
 
 export const navItems: NavItem[] = [
   {
@@ -55,7 +67,7 @@ export const socialLinks: SocialLinks[] = [
   },
 ];
 
-export const services: Services[] = [
+export const services: Service[] = [
   {
     src: ictBusinessEducation,
     title: "ICT & BUSINESS EDUCATION",
@@ -100,5 +112,56 @@ export const services: Services[] = [
     src: trainingCertification,
     title: "TRAINING AND CETIFICATION",
     body: "We empower individuals and companies to thrive in the dynamic IT field through our comprehensive training with extensive experience translating theory into practical skills. and certification programs.",
+  },
+];
+
+export const skills: Skill[] = [
+  {
+    src: trainingSkill,
+    skill: "Training and Certification",
+  },
+  {
+    src: mobileWebSkill,
+    skill: "Mobile and Web Development",
+  },
+  {
+    src: consultingStrategySkill,
+    skill: "IT Consulting & Strategy",
+  },
+  {
+    src: virtualAugRealitySkill,
+    skill: "Virtual & Augmented Reality Development",
+  },
+  {
+    src: cyberSecuritySkill,
+    skill: "Cyber Security",
+  },
+  {
+    src: machineLearningSkill,
+    skill: "Artificial Intelligence & Machine Learning",
+  },
+  {
+    src: hardwareSkill,
+    skill: "Hardware installation & maintenance",
+  },
+  {
+    src: projectManagementSkill,
+    skill: "Project Management",
+  },
+  {
+    src: customerSupportSkill,
+    skill: "Customer Support & Technical Assistance",
+  },
+  {
+    src: dataAnalysisSkill,
+    skill: "Data Analysis & Management",
+  },
+  {
+    src: digitalMarketingSkill,
+    skill: "Digital Marketing & SEO Optimization",
+  },
+  {
+    src: enterpriseResourceSkill,
+    skill: "Enterprise Resource Planning Implementaton",
   },
 ];

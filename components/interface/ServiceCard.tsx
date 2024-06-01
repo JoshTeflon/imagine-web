@@ -1,9 +1,9 @@
 import Image from 'next/image';
 import classnames from 'classnames';
 
-import { Services } from '@/types';
+import { Service } from '@/types';
 
-export interface ServiceCardProps extends Services {
+export interface ServiceCardProps extends Service {
   className?: string
 }
 
@@ -12,9 +12,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ src, title, body, className }
     <div
       className={classnames(className, "relative w-full max-w-[23rem] min-h-[23.125rem] rounded-xl shadow-serviceCard hover:shadow-hoverServiceCard")}
     >
-      <div className="absolute top-0 left-0 right-0 w-full min-h-[11.375rem] bg-[#D9D9D9] rounded-xl">
+      <div className="absolute top-0 left-0 right-0 w-full min-h-[11.375rem] bg-card rounded-xl">
         <Image
-          className=""
           alt={title}
           src={src}
           style={{
