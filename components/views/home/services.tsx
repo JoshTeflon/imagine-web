@@ -1,9 +1,9 @@
 import { Poppins } from "next/font/google";
 import classnames from "classnames";
 
-import { ServiceCard } from "@/components/interface";
-import { services } from "@/lib";
-import { Service } from "@/types";
+import { TrainingCard } from "@/components/interface";
+import { trainings } from "@/lib";
+import { Training } from "@/types";
 
 const poppins = Poppins({ weight: ["500"], subsets: ["latin"] });
 
@@ -20,10 +20,10 @@ const Services: React.FC = () => {
         className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-y-4 md:gap-y-8 md:gap-x-6"
       >
         {
-          services?.map((service: Service) => (
-            <ServiceCard
-              key={service?.title}
-              {...service}
+          trainings?.map((training: Training) => (
+            <TrainingCard
+              key={training?.title}
+              {...training}
             />
           ))
         }

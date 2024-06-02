@@ -1,5 +1,6 @@
 import { Email, Facebook, Instagram, Linkedin } from "@/components/icons";
-import { AboutDetails, NavItem, Service, Skill, SocialLinks } from "@/types";
+import { AboutDetails, NavItem, Service, Skill, SocialLinks, Training } from "@/types";
+
 import ictBusinessEducation from "@/assets/ictBusinessEducation.png";
 import databaseManagement from "@/assets/databaseManagement.png";
 import devops from "@/assets/devops.png";
@@ -67,7 +68,7 @@ export const socialLinks: SocialLinks[] = [
   },
 ];
 
-export const services: Service[] = [
+export const trainings: Training[] = [
   {
     src: ictBusinessEducation,
     title: "ICT & BUSINESS EDUCATION",
@@ -164,4 +165,11 @@ export const skills: Skill[] = [
     src: enterpriseResourceSkill,
     skill: "Enterprise Resource Planning Implementaton",
   },
+];
+
+export const services: Service[] = [
+  {
+    src: ictBusinessEducation,
+    title: "",
+  }
 ];

@@ -18,6 +18,8 @@ const config: Config = {
         "lowBlue": "#9BA6B6",
         "highBlue": "#6B91CD",
         "card": "#D9D9D9",
+        "servicesBg": "#F2F7FF",
+        "serviceText": "#848DA1",
       },
       boxShadow: {
         'serviceCard': "0px 8px 4px 0px #0000001F",
