@@ -7,13 +7,12 @@ export interface ServiceCardProps extends Service {
   className?: string
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ src, title, body, className }) => {
+const ServiceCard: React.FC<ServiceCardProps> = ({ src, title, className }) => {
   return (
-    <div
-      className={classnames(className, "relative w-full max-w-[23rem] min-h-[23.125rem] rounded-xl shadow-serviceCard hover:shadow-hoverServiceCard")}
-    >
-      <div className="absolute top-0 left-0 right-0 w-full min-h-[11.375rem] bg-card rounded-xl">
+    <div className={classnames(className, "w-full max-w-[16.875rem]")}>
+      <div className="w-full h-[13.5rem] rounded-t-2xl">
         <Image
+          className="rounded-t-2xl"
           alt={title}
           src={src}
           style={{
@@ -24,17 +23,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ src, title, body, className }
           priority
         />
       </div>
-      <div
-        className="absolute bottom-0 left-0 right-0 xl:py-6 2xl:py-0 px-6 w-full min-h-[13.5rem] bg-white flex items-center justify-center rounded-xl"
-      >
-        <div>
-          <h4 className="mb-3 text-base text-black font-black leading-[19.2px]">
-            {title}
-          </h4>
-          <p className="text-base text-black/50 font-medium">
-            {body}
-          </p>
-        </div>
+      <div className="py-4 px-6 w-full min-h-[5.75rem] bg-white text-center border-t border-grey/40 rounded-b-2xl">
+        <span className="text-xl text-black font-semibold">
+          {title}
+        </span>
       </div>
     </div>
   )
