@@ -20,8 +20,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${lato.className} relative text-grey`}>
         <Header />
-        {children}
-        <Footer /> 
+        <div id="content-container">
+          {children}
+          <Footer /> 
+        </div>
       </body>
     </html>
   );

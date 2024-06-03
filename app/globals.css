@@ -21,6 +21,15 @@ body {
   text-decoration: none;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
+#content-container.blur {
+  filter: blur(5px);
+  transition: filter 0.3s ease-in-out;
+}
+
 .hamburger {
   @apply relative my-0 mx-auto w-8 h-[1.125rem];
 }

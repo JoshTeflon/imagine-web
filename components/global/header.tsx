@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import classnames from "classnames";
 
 import { Button } from "@/components/interface";
@@ -17,6 +17,17 @@ const Header: React.FC = () => {
   const handleNavCheckboxChange = () => {
     setIsMobileNavOpen(prevState => !prevState);
   };
+
+  useEffect(() => {
+    const contentContainer = document.getElementById('content-container');
+    if (isMobileNavOpen) {
+      document.body.classList.add("no-scroll");
+      if (contentContainer) contentContainer.classList.add("blur");
+    } else {
+      document.body.classList.remove("no-scroll");
+      if (contentContainer) contentContainer.classList.remove("blur");
+    }
+  }, [isMobileNavOpen]);
 
   return (
     <header className="fixed top-0 z-30 w-full">
@@ -48,7 +59,7 @@ const Header: React.FC = () => {
           <div className="hidden lg:block">
             <Button>Contact us</Button>
           </div>
-          <div className="-mr-2 lg:hidden">
+          <div className="lg:hidden">
             <input
               type="checkbox"
               id="nav-checkbox"
