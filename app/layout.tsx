@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.className} text-grey`}>
+      <body className={`${lato.className} relative text-grey`}>
         <Header />
         {children}
         <Footer /> 
