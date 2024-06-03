@@ -20,3 +20,48 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-decoration: none;
 }
+
+.hamburger {
+  @apply relative my-0 mx-auto w-8 h-[1.125rem];
+}
+
+.hamburger .bar {
+  @apply absolute block p-0 w-8 h-0.5 bg-dark rounded transition-all duration-300 ease-in-out;
+}
+
+.bar1 {
+  @apply top-0;
+}
+
+.bar2,
+.bar3 {
+  @apply top-2;
+}
+
+.bar3 {
+  @apply right-0;
+}
+
+.bar4 {
+  @apply bottom-0;
+}
+
+.nav-checkbox:checked + label > .hamburger > .bar1{
+  transform-origin: center;
+  transform: rotate(45deg) translate(8px, 4px);
+}
+
+.nav-checkbox:checked + label > .hamburger > .bar2 {
+  transform: translateX(-32px);
+  background-color: transparent;
+}
+
+.nav-checkbox:checked + label > .hamburger > .bar3 {
+  transform: translateX(32px);
+  background-color: transparent;
+}
+
+.nav-checkbox:checked + label > .hamburger > .bar4 {
+  transform-origin: center;
+  transform: rotate(-45deg) translate(8px, -4px);
+}
