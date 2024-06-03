@@ -15,7 +15,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ src, skill, className }) => {
         "group py-3 px-4 w-full max-w-[17rem] min-h-[4.5rem] flex items-center space-x-2.5 border border-low hover:border-highBlue/30 rounded-lg hover:shadow-hoverSkillCard"
       )}
     >
-      <div className="w-[2.625rem] h-[2.625rem] flex-none rounded-full">
+      <div className="w-[2.625rem] h-[2.625rem] bg-card flex-none rounded-full">
         <Image
           className="rounded-full"
           alt={skill}

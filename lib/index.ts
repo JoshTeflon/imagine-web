@@ -22,6 +22,34 @@ import customerSupportSkill from "@/assets/customerSupportSkill.png";
 import dataAnalysisSkill from "@/assets/dataAnalysisSkill.png";
 import digitalMarketingSkill from "@/assets/digitalMarketingSkill.png";
 import enterpriseResourceSkill from "@/assets/enterpriseResourceSkill.png";
+import dataScienceService from "@/assets/dataScienceService.png";
+import businessAnalysisService from "@/assets/businessAnalysisService.png";
+import projectManagementService from "@/assets/projectManagementService.png";
+import isacaService from "@/assets/isacaService.png";
+import cyberSecurityService from "@/assets/cyberSecurityService.png";
+import ciscoService from "@/assets/ciscoService.png";
+import fraudExaminerService from "@/assets/fraudExaminerService.png";
+import webDevService from "@/assets/webDevService.png";
+import softwareDevelopmentService from "@/assets/softwareDevelopmentService.png";
+import ieltsService from "@/assets/ieltsService.png";
+import programmingService from "@/assets/programmingService.png";
+import microsoftService from "@/assets/microsoftService.png";
+import compTiaService from "@/assets/compTiaService.png";
+import riskInformationService from "@/assets/riskInformationService.png";
+import advancedExcelService from "@/assets/advancedExcelService.png";
+import dataAnalyticsService from "@/assets/dataAnalyticsService.png";
+import redHatService from "@/assets/redHatService.png";
+import hadoopService from "@/assets/hadoopService.png";
+import ccbaPrepService from "@/assets/ccbaPrepService.png";
+import awsArchitectureService from "@/assets/awsArchitectureService.png";
+import cobitService from "@/assets/cobitService.png";
+import awsDevelopmentService from "@/assets/awsDevelopmentService.png";
+import leadershipManagementService from "@/assets/leadershipManagementService.png";
+import digitalTransformationService from "@/assets/digitalTransformationService.png";
+import businessPlanningService from "@/assets/businessPlanningService.png";
+import leadAuditorService from "@/assets/leadAuditorService.png";
+import leadImplementerService from "@/assets/leadImplementerService.png";
+import ccbaTrainingService from "@/assets/ccbaTrainingService.png";
 
 export const navItems: NavItem[] = [
   {
@@ -169,7 +197,115 @@ export const skills: Skill[] = [
 
 export const services: Service[] = [
   {
-    src: ictBusinessEducation,
-    title: "",
-  }
+    src: dataScienceService,
+    title: "Data Science",
+  },
+  {
+    src: businessAnalysisService,
+    title: "Business Analysis CBAP",
+  },
+  {
+    src: projectManagementService,
+    title: "Project Management PMP & PRINCE 2",
+  },
+  {
+    src: isacaService,
+    title: "ISACA, CISA, CISM",
+  },
+  {
+    src: cyberSecurityService,
+    title: "Cyber Security",
+  },
+  {
+    src: ciscoService,
+    title: "CISCO, CCNA, CCNP",
+  },
+  {
+    src: fraudExaminerService,
+    title: "Association Of Certified Fraud Examiner-Acfe",
+  },
+  {
+    src: webDevService,
+    title: "Websites And Web Apps Development",
+  },
+  {
+    src: softwareDevelopmentService,
+    title: "Software Development",
+  },
+  {
+    src: ieltsService,
+    title: "IELTS, GMAT, Duolingo",
+  },
+  {
+    src: programmingService,
+    title: "Programming Languages",
+  },
+  {
+    src: microsoftService,
+    title: "Microsoft MCSE, MCSA",
+  },
+  {
+    src: compTiaService,
+    title: "compTia A",
+  },
+  {
+    src: riskInformationService,
+    title: "Risk Information System Auditing",
+  },
+  {
+    src: advancedExcelService,
+    title: "Advanced Excel, Financial Modelling",
+  },
+  {
+    src: dataAnalyticsService,
+    title: "Data Analytics & Automation",
+  },
+  {
+    src: redHatService,
+    title: "Red Hat System",
+  },
+  {
+    src: hadoopService,
+    title: "Hadoop Architecture & Administration Training",
+  },
+  {
+    src: ccbaPrepService,
+    title: "CCBA Exam prep",
+  },
+  {
+    src: awsArchitectureService,
+    title: "Architecting on AWS (AWS-ARCH)",
+  },
+  {
+    src: cobitService,
+    title: "COBIT 5 Foundation",
+  },
+  {
+    src: awsDevelopmentService,
+    title: "Developing on AWS (AWS-DEV)",
+  },
+  {
+    src: leadershipManagementService,
+    title: "Leadership & Management Skill",
+  },
+  {
+    src: digitalTransformationService,
+    title: "Digital Transformation",
+  },
+  {
+    src: businessPlanningService,
+    title: "Business Planning & Management",
+  },
+  {
+    src: leadAuditorService,
+    title: "ISO 27001 Lead Auditor",
+  },
+  {
+    src: leadImplementerService,
+    title: "ISO 27001 Lead Implementer",
+  },
+  {
+    src: ccbaTrainingService,
+    title: "CCBA Training & Certification",
+  },
 ];

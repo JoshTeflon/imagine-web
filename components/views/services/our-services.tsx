@@ -1,6 +1,6 @@
 import { ServiceCard } from "@/components/interface"
-import { trainings } from "@/lib"
-import { Training } from "@/types"
+import { services } from "@/lib"
+import { Service } from "@/types"
 
 const OurServices: React.FC = () => {
   return (
@@ -17,7 +17,7 @@ const OurServices: React.FC = () => {
         className="mx-auto max-w-[72rem] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-items-center gap-y-4 md:gap-y-8 md:gap-x-6"
       >
         {
-          trainings?.map((service: Training) => (
+          services?.map((service: Service) => (
             <ServiceCard
               key={service?.title}
               src={service?.src}
