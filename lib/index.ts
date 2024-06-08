@@ -1,5 +1,5 @@
 import { Email, Facebook, Instagram, Linkedin } from "@/components/icons";
-import { AboutDetails, NavItem, Service, Skill, SocialLinks, Training } from "@/types";
+import { AboutDetails, NavItem, Review, Service, Skill, SocialLinks, Training } from "@/types";
 
 import ictBusinessEducation from "@/assets/ictBusinessEducation.png";
 import databaseManagement from "@/assets/databaseManagement.png";
@@ -69,11 +69,13 @@ export const navItems: NavItem[] = [
 export const aboutDetails: AboutDetails[] = [
   {
     header: "Purpose",
-    paragraph: "We are passionate about empowering individuals and organizations with the IT skills and knowledge they need to thrive in today's ever-evolving digital landscape. Through engaging training, expert consultancy, and industry-recognized certifications, we bridge the skills gap and unlock career potential."
+    paragraph: "We are passionate about empowering individuals and organizations with the IT skills and knowledge they need to thrive in today's ever-evolving digital landscape. Through engaging training, expert consultancy, and industry-recognized certifications, we bridge the skills gap and unlock career potential.",
+    href: "/about"
   },
   {
     header: "Performance",
-    paragraph: "We stay ahead of the curve with the latest IT trends and best practices, ensuring our training and consulting services yield the best possible performance outcomes and we have a high certification pass rate, ensuring our students are well-equipped to succeed in their IT careers."
+    paragraph: "We stay ahead of the curve with the latest IT trends and best practices, ensuring our training and consulting services yield the best possible performance outcomes and we have a high certification pass rate, ensuring our students are well-equipped to succeed in their IT careers.",
+    href: "/services"
   },
 ];
 
@@ -308,4 +310,37 @@ export const services: Service[] = [
     src: ccbaTrainingService,
     title: "CCBA Training & Certification",
   },
+];
+
+export const reviews: Review[] = [
+  {
+    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=reviewer1",
+    name: "Alice Johnson",
+    role: "Software Engineer",
+    comment: "This service has been fantastic. It's helped streamline our process immensely and the support team is top-notch."
+  },
+  {
+    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=reviewer2",
+    name: "Bob Smith",
+    role: "Product Manager",
+    comment: "I've been using this product for the past year and it has significantly improved our productivity. Highly recommended!"
+  },
+  {
+    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=reviewer3",
+    name: "Charlie Brown",
+    role: "UI/UX Designer",
+    comment: "The design and user experience are excellent. The team clearly put a lot of thought into making it intuitive and easy to use."
+  },
+  {
+    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=reviewer4",
+    name: "Danielle Williams",
+    role: "Data Scientist",
+    comment: "This tool has been a game-changer for our data analysis. The features are robust and the interface is user-friendly."
+  },
+  {
+    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=reviewer5",
+    name: "Edward King",
+    role: "Marketing Specialist",
+    comment: "I've been able to reach new heights with my campaigns thanks to this service. The insights provided are invaluable."
+  }
 ];

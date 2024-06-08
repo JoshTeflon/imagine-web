@@ -7,7 +7,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'naked' | 'link'
 }
 
-const Button: React.FC<ButtonProps> = ({ children, className = '', variant = 'primary' }) => {
+const Button: React.FC<ButtonProps> = ({ children, className = '', variant = 'primary', ...rest }) => {
   return (
     <button
       className={classnames(
@@ -19,6 +19,7 @@ const Button: React.FC<ButtonProps> = ({ children, className = '', variant = 'pr
           'pb-[0.5px] text-current border-b border-current': variant === 'link'
         }
       )}
+      {...rest}
     >
       {children}
     </button>

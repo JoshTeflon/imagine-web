@@ -55,22 +55,23 @@ body.no-scroll {
   @apply bottom-0;
 }
 
-.nav-checkbox:checked + label > .hamburger > .bar1{
+.hamburger.mobile-nav_open > .bar1{
   transform-origin: center;
   transform: rotate(45deg) translate(8px, 4px);
 }
 
-.nav-checkbox:checked + label > .hamburger > .bar2 {
+.hamburger.mobile-nav_open > .bar2 {
   transform: translateX(-32px);
   background-color: transparent;
 }
 
-.nav-checkbox:checked + label > .hamburger > .bar3 {
+.hamburger.mobile-nav_open > .bar3 {
   transform: translateX(32px);
   background-color: transparent;
 }
 
-.nav-checkbox:checked + label > .hamburger > .bar4 {
+.hamburger.mobile-nav_open > .bar4 {
   transform-origin: center;
   transform: rotate(-45deg) translate(8px, -4px);
 }
+

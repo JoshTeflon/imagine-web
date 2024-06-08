@@ -10,9 +10,10 @@ import { NavItem } from "@/types";
 
 export interface MobileNavProps {
   className?: string
+  onReset?: () => void
 }
 
-const MobileNav: React.FC<MobileNavProps> = ({ className }) => {
+const MobileNav: React.FC<MobileNavProps> = ({ className, onReset }) => {
   const pathname = usePathname();
 
   return (
@@ -27,6 +28,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ className }) => {
                   className={classnames("text-base text-grey hover:text-primary font-bold whitespace-nowrap", {
                     "text-primary": pathname === item?.url
                   })}
+                  onClick={onReset}
                 >
                   <span>{item?.label?.charAt(0).toUpperCase() + item?.label?.slice(1)}</span>
                 </Link>
@@ -38,6 +40,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ className }) => {
       <div className="mt-5 flex items-center justify-center">
         <Button
           className="mx-auto w-full max-w-36 !py-2 !px-4"
+          onClick={onReset}
         >Contact</Button>
       </div>
     </div>

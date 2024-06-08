@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
 import { Button } from "@/components/interface";
@@ -23,15 +24,17 @@ const About: React.FC = () => {
             aboutDetails?.map((details: AboutDetails) => (
               <div
                 key={details.header}
-                className="group py-4 px-6 text-base border-l-2 border-grey hover:border-primary cursor-pointer"
+                className="group py-4 px-6 text-base border-l-2 border-grey hover:border-primary"
               >
                 <h3 className="mb-2 text-dark font-medium">{details?.header}</h3>
                 <p className="text-grey leading-6">{details?.paragraph}</p>
                 <Button
                   variant="link"
-                  className="mt-4 lg:mt-8 text-grey group-hover:text-primary"
+                  className="mt-4 lg:mt-8 text-grey group-hover:text-primary border-b border-current"
                 >
-                  Read more
+                  <Link href={details.href}>
+                    Read more
+                  </Link>
                 </Button>
               </div>
             ))

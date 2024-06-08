@@ -9,6 +9,7 @@ export interface NavItem {
 export interface AboutDetails {
   header: string
   paragraph: string
+  href: string
 }
 
 export interface SocialLinks {
@@ -30,4 +31,11 @@ export interface Skill {
 export interface Service {
   src: StaticImageData
   title: string
+}
+
+export interface Review {
+  imageUrl: string
+  name: string
+  role: string
+  comment: string
 }

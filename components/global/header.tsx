@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import classnames from "classnames";
 
 import { Button } from "@/components/interface";
@@ -13,10 +13,24 @@ import { NavItem } from "@/types";
 const Header: React.FC = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const pathname = usePathname();
+  const navRef = useRef<HTMLDivElement>(null);
 
-  const handleNavCheckboxChange = () => {
-    setIsMobileNavOpen(prevState => !prevState);
+  const closeMobileNav = () => {
+    setIsMobileNavOpen(false);
   };
+
+  const handleClickOutside = useCallback((event: MouseEvent) => {
+    if (navRef.current && !navRef.current.contains(event.target as Node)) {
+      closeMobileNav();
+    }
+  }, []);
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [handleClickOutside]);
 
   useEffect(() => {
     const contentContainer = document.getElementById('content-container');
@@ -30,8 +44,8 @@ const Header: React.FC = () => {
   }, [isMobileNavOpen]);
 
   return (
-    <header className="fixed top-0 z-30 w-full">
-      <div className="w-full h-[4.125rem] lg:h-[4.625rem] bg-white">
+    <header className="fixed top-0 z-30 w-full" ref={navRef}>
+      <div className="w-full h-[4.125rem] lg:h-[4.625rem] bg-white border-b border-low">
         <div className="mx-auto w-11/12 xl:w-3/4 h-full flex items-center justify-between">
           <div className="text-dark font-black uppercase">
             <Link href="/" className="text-base md:text-2xl lg:text-[2rem]">
@@ -59,22 +73,18 @@ const Header: React.FC = () => {
           <div className="hidden lg:block">
             <Button>Contact us</Button>
           </div>
-          <div className="lg:hidden">
-            <input
-              type="checkbox"
-              id="nav-checkbox"
-              className="nav-checkbox hidden"
-              onChange={handleNavCheckboxChange}
-            />
-            <label htmlFor="nav-checkbox">
-              <div className="hamburger">
-                <span className="bar bar1"></span>
-                <span className="bar bar2"></span>
-                <span className="bar bar3"></span>
-                <span className="bar bar4"></span>
-              </div>
-            </label>
-          </div>
+          <Button
+            variant="naked"
+            className="lg:hidden"
+            onClick={() => setIsMobileNavOpen(prevState => !prevState)}
+          >
+            <div className={classnames("hamburger", { "mobile-nav_open": isMobileNavOpen })}>
+              <span className="bar bar1"></span>
+              <span className="bar bar2"></span>
+              <span className="bar bar3"></span>
+              <span className="bar bar4"></span>
+            </div>
+          </Button>
         </div>
       </div>
       <MobileNav
@@ -82,6 +92,7 @@ const Header: React.FC = () => {
           "translate-x-full": !isMobileNavOpen,
           "translate-x-0": isMobileNavOpen
         })}
+        onReset={closeMobileNav}
       />
     </header>
   )
