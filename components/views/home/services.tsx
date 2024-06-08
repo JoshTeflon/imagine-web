@@ -9,7 +9,7 @@ const poppins = Poppins({ weight: ["500"], subsets: ["latin"] });
 
 const Services: React.FC = () => {
   return (
-    <section className="w-full">
+    <section className="pb-12 lg:pb-24 w-full">
       <div className="mx-auto w-full lg:max-w-[47rem] mb-6 lg:mb-12 text-center">
         <h2 className="mb-4 text-base font-black text-secondary">Our services</h2>
         <p className={classnames(poppins.className, 'text-base text-black/50 font-medium leading-6')}>
