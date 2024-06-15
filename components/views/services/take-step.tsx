@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-import { Button } from "@/components/interface";
+import { ContactButton } from '@/components/global';
 import takeStepBg from "@/assets/takeStep.png";
 
 const TakeStep = () => {
   return (
     <section className="pb-12 lg:pb-24 bg-stepBg">
       <div className="mx-auto w-full max-w-[72rem] flex flex-col lg:flex-row items-center">
-        <div className='max-w-[40rem] h-auto mb-6 lg:mb-0'>
+        <div className='max-w-[40rem] bg-card h-auto mb-6 lg:mb-0'>
           <Image
             alt="about us"
             src={takeStepBg}
@@ -26,7 +26,7 @@ const TakeStep = () => {
           <p className="mt-2 mb-4 text-base text-white/60 leading-[30px]">
             Equip yourself and your team with the skills and knowledge to thrive in the IT landscape.
           </p>
-          <Button>Contact us</Button>
+          <ContactButton />
         </div>
       </div>
     </section>

@@ -14,7 +14,7 @@ const poppins = Poppins({ weight: ["500"], subsets: ["latin"] });
 const ReviewCard: React.FC<ReviewCardProps> = ({ className, imageUrl, name, role, comment }) => {
   return (
     <div className={classnames(className, "group flex flex-col justify-center bg-low/10 hover:bg-card/20 border-[0.5px] border-card p-2.5 rounded-lg")}>
-      <Qoute className="w-6 lg:w-8" />
+      <Qoute className="w-6 lg:w-8 group-hover:text-primary" />
       <div className={classnames(poppins.className, "my-2 lg:my-4 group-hover:text-dark text-xl text-start font-medium line-clamp-4")}>
         {comment}
       </div>
