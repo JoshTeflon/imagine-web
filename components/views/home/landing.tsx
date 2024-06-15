@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
-import { Button } from '@/components/interface';
 import homeBg from '@/assets/homeBg.png';
+import { ContactButton } from '@/components/global';
 
 const Landing: React.FC = () => {
   return (
@@ -26,7 +26,7 @@ const Landing: React.FC = () => {
         <p className='mt-4 mb-8 text-base lg:text-2xl text-low leading-[19px] lg:leading-10'>
           We are dedicated to Empowering Individuals, Businesses & Professionals to solve Business Challenges & Achieve Success
         </p>
-        <Button>Contact us</Button>
+        <ContactButton />
       </div>
     </div>
   )

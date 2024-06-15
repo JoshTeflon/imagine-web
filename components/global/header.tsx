@@ -6,7 +6,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import classnames from "classnames";
 
 import { Button } from "@/components/interface";
-import { MobileNav } from "@/components/global";
+import { ContactButton, MobileNav } from "@/components/global";
 import { navItems } from "@/lib";
 import { NavItem } from "@/types";
 
@@ -71,7 +71,7 @@ const Header: React.FC = () => {
             </ul>
           </nav>
           <div className="hidden lg:block">
-            <Button>Contact us</Button>
+            <ContactButton />
           </div>
           <Button
             variant="naked"
