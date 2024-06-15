@@ -40,7 +40,7 @@ const About: React.FC = () => {
             ))
           }
         </div>
-        <div className='max-w-[40rem] h-auto mb-6 lg:mb-0'>
+        <div className='max-w-[40rem] h-auto mb-6 lg:mb-0 rounded-xl'>
           <Image
             alt="about us"
             src={homeAbout}
@@ -48,6 +48,7 @@ const About: React.FC = () => {
               width: '100%',
               height: '100%',
               objectFit: 'cover',
+              borderRadius: '12px'
             }}
             priority
           />
