@@ -38,10 +38,13 @@ const MobileNav: React.FC<MobileNavProps> = ({ className, onReset }) => {
         </ul>
       </nav>
       <div className="mt-5 flex items-center justify-center">
-        <Button
-          className="mx-auto w-full max-w-36 !py-2 !px-4"
-          onClick={onReset}
-        >Contact</Button>
+        <Button className="mx-auto w-full max-w-36 !py-2 !px-4">
+          <a
+            className="w-full h-full"
+            href="mailto:example@example.com?subject=Contact&body=Hello, I would like to..."
+            onClick={onReset}
+          >Contact</a>
+        </Button>
       </div>
     </div>
   )
