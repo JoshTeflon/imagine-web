@@ -82,19 +82,23 @@ export const aboutDetails: AboutDetails[] = [
 export const socialLinks: SocialLinks[] = [
   {
     icon: Linkedin,
-    url: "/linkedin-a"
+    url: "/linkedin-a",
+    label: "Linkedin handle"
   },
   {
     icon: Facebook,
-    url: "/facebook-a"
+    url: "/facebook-a",
+    label: "Facebook page"
   },
   {
     icon: Email,
-    url: "/email-a"
+    url: "/email-a",
+    label: "Company Email"
   },
   {
     icon: Instagram,
-    url: "/instagram-a"
+    url: "/instagram-a",
+    label: "Instagram handle"
   },
 ];
 
@@ -314,33 +318,45 @@ export const services: Service[] = [
 
 export const reviews: Review[] = [
   {
-    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=reviewer1",
-    name: "Alice Johnson",
-    role: "Software Engineer",
-    comment: "This service has been fantastic. It's helped streamline our process immensely and the support team is top-notch."
+    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=AyomideFunsho",
+    name: "Ayomide Funsho",
+    role: "Security Enthusiast",
+    comment: "Learning Cybersecurity from IMAGINE INTEGRATED SYSTEMS was a quality experience and led me to secure a job as a cybersecurity analyst. The knowledge gained here was pivotal for my career growth."
   },
   {
-    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=reviewer2",
-    name: "Bob Smith",
-    role: "Product Manager",
-    comment: "I've been using this product for the past year and it has significantly improved our productivity. Highly recommended!"
+    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=EbenezerChristopher",
+    name: "Ebenezer Christopher",
+    role: "Cloud Engineer",
+    comment: "The AWS Certified Solutions Architect course here was phenomenal! The practical insights shared during the sessions were invaluable, enabling me to implement scalable and robust solutions in real-world scenarios."
   },
   {
-    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=reviewer3",
-    name: "Charlie Brown",
-    role: "UI/UX Designer",
-    comment: "The design and user experience are excellent. The team clearly put a lot of thought into making it intuitive and easy to use."
+    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=FasholaPeters",
+    name: "Fashola Peters",
+    role: "Network Administrator",
+    comment: "The CCNA course provided by IMAGINE INTEGRATED SYSTEMS gave me a solid foundation in networking. It was instrumental in my role as a network administrator, allowing me to troubleshoot and manage networks effectively."
   },
   {
-    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=reviewer4",
-    name: "Danielle Williams",
-    role: "Data Scientist",
-    comment: "This tool has been a game-changer for our data analysis. The features are robust and the interface is user-friendly."
+    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=MichaelPeters",
+    name: "Michael Peters",
+    role: "Project Manager",
+    comment: "The Certified ScrumMaster course was an eye-opener! I learned valuable Agile methodologies and became proficient in leading Scrum teams. It's been a game-changer in my project management career."
   },
   {
-    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=reviewer5",
-    name: "Edward King",
-    role: "Marketing Specialist",
-    comment: "I've been able to reach new heights with my campaigns thanks to this service. The insights provided are invaluable."
+    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=OnunakuSuberu",
+    name: "Onunaku Suberu",
+    role: "IT Technician",
+    comment: "Studying for the CompTIA A+ certification with IMAGINE INTEGRATED SYSTEMS was fantastic! The course content was comprehensive, and the hands-on labs helped me grasp concepts easily. Now I'm a certified IT technician!"
+  },
+  {
+    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=MakindeOluwatosin",
+    name: "Makinde Oluwatosin",
+    role: "Cybersecurity Specialist",
+    comment: "The CISSP training at IMAGINE INTEGRATED SYSTEMS was top-notch! It provided me with a deep understanding of cybersecurity principles and greatly enhanced my career prospects as a security professional."
+  },
+  {
+    imageUrl: "https://avatars.dicebear.com/api/adventurer/svg?seed=GraceCoker",
+    name: "Grace Coker",
+    role: "Project Manager",
+    comment: "The PMP course was a game-changer for my career. IMAGINE INTEGRATED SYSTEMS' training equipped me with the necessary skills to lead projects effectively, and I'm now a certified Project Management Professional."
   }
 ];

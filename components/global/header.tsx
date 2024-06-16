@@ -48,7 +48,11 @@ const Header: React.FC = () => {
       <div className="w-full h-[4.125rem] lg:h-[4.625rem] bg-white border-b border-low">
         <div className="mx-auto w-11/12 xl:w-3/4 h-full flex items-center justify-between">
           <div className="text-dark font-black uppercase">
-            <Link href="/" className="text-base md:text-2xl lg:text-[2rem]">
+            <Link
+              href="/"
+              aria-label="Imagine logo, Home link"
+              className="text-base md:text-2xl lg:text-[2rem]"
+            >
               <span>IMAGINE INTEGRATED SYSTEMS</span>
             </Link>
           </div>
@@ -59,6 +63,7 @@ const Header: React.FC = () => {
                   <li key={item?.url}>
                     <Link
                       href={item?.url}
+                      aria-label={`${item?.label} page`}
                       className={classnames("text-base text-grey hover:text-primary font-medium whitespace-nowrap", {
                         "text-primary": pathname === item?.url
                       })}

@@ -25,6 +25,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ className, onReset }) => {
               <li key={item?.url}>
                 <Link
                   href={item?.url}
+                  aria-label={`${item?.label} page`}
                   className={classnames("text-base text-grey hover:text-primary font-bold whitespace-nowrap", {
                     "text-primary": pathname === item?.url
                   })}

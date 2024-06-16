@@ -13,12 +13,15 @@ const poppins = Poppins({ weight: ["500"], subsets: ["latin"] });
 
 const ReviewCard: React.FC<ReviewCardProps> = ({ className, imageUrl, name, role, comment }) => {
   return (
-    <div className={classnames(className, "group flex flex-col justify-center bg-low/10 hover:bg-card/20 border-[0.5px] border-card p-2.5 rounded-lg")}>
-      <Qoute className="w-6 lg:w-8 group-hover:text-primary" />
-      <div className={classnames(poppins.className, "my-2 lg:my-4 group-hover:text-dark text-xl text-start font-medium line-clamp-4")}>
+    <div className={classnames(
+      className,
+      "group flex flex-col bg-low/10 hover:bg-card/20 border-[1.5px] border-card hover:border-darkBlue py-2.5 px-2.5 lg:px-4 rounded-lg"
+    )}>
+      <Qoute className="w-6 lg:w-8 text-highBlue group-hover:text-primary" />
+      <div className={classnames(poppins.className, "my-2 lg:my-3 text-dark/85 group-hover:text-dark text-lg text-start font-medium line-clamp-6")}>
         {comment}
       </div>
-      <div className="flex items-center space-x-2">
+      <div className="mt-auto flex items-center space-x-2">
         <div className="w-8 h-8 lg:w-9 lg:h-9 bg-card flex-none rounded-full">
           <Image
             className="rounded-full"
@@ -34,9 +37,9 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ className, imageUrl, name, role
             priority
           />
         </div>
-        <div className="text-sm text-start hover:opacity-90">
-          <h6 className="text-dark/80 font-bold">{name}</h6>
-          <p className="text-grey font-medium">{role}</p>
+        <div className="text-start opacity-85 group-hover:opacity-100">
+          <h6 className="text-sm text-overlay font-bold">{name}</h6>
+          <p className="text-[0.625rem] text-grey font-medium uppercase">{role}</p>
         </div>
       </div>
     </div>

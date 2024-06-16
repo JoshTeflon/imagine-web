@@ -20,7 +20,7 @@ const config: Config = {
         "card": "#D9D9D9",
         "servicesBg": "#F2F7FF",
         "serviceText": "#848DA1",
-        "stepBg": "#95AACB",
+        "stepBg": "#45608A",
         "overlay": "#243754",
       },
       boxShadow: {

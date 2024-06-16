@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             <span className="text-base md:text-2xl">IMAGINE INTEGRATED SYSTEMS</span>
           </div>
           <p className="mt-4 mb-8 text-base">
-            This is a placeholder text giving few information about the company
+            Your one-stop for your IT expertise. Get certified, get ahead
           </p>
           <ul className="flex items-center space-x-4 lg:space-x-8">
             {
@@ -23,7 +23,11 @@ const Footer: React.FC = () => {
                   key={link?.url}
                   className="w-8 h-8 bg-primary text-white rounded-[0.25rem]"
                 >
-                  <a className="w-full h-full flex items-center justify-center" href={link?.url}>
+                   <a
+                    className="w-full h-full flex items-center justify-center"
+                    href={link?.url}
+                    aria-label={link?.label}
+                  >
                     <link.icon />
                   </a>
                 </li>
@@ -38,7 +42,7 @@ const Footer: React.FC = () => {
               {
                 navItems?.map((item: NavItem) => (
                   <li key={item?.url}>
-                    <Link href={item?.url}>
+                    <Link href={item?.url} aria-label={item?.label}>
                       <Button
                         variant="link"
                         className="text-base font-medium whitespace-nowrap"

@@ -33,7 +33,10 @@ const About: React.FC = () => {
                   variant="link"
                   className="mt-4 lg:mt-8 text-grey group-hover:text-primary border-b border-current"
                 >
-                  <Link href={details.href}>
+                  <Link
+                    href={details.href}
+                    aria-label={`Read more on ${details?.header}`}
+                  >
                     Read more
                   </Link>
                 </Button>
