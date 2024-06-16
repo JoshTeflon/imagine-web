@@ -15,6 +15,7 @@ export interface AboutDetails {
 export interface SocialLinks {
   icon: React.ComponentType<SVGProps<SVGSVGElement>>
   url: string
+  label?: string
 }
 
 export interface Training {
