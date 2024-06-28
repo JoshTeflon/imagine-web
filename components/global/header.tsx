@@ -44,7 +44,7 @@ const Header: React.FC = () => {
   }, [isMobileNavOpen]);
 
   return (
-    <header className="fixed top-0 z-30 w-full" ref={navRef}>
+    <header className="fixed top-0 z-30 w-full h-[4.125rem] lg:h-[4.625rem]" ref={navRef}>
       <div className="w-full h-[4.125rem] lg:h-[4.625rem] bg-white border-b border-low">
         <div className="mx-auto w-11/12 xl:w-3/4 h-full flex items-center justify-between">
           <div className="text-dark font-black uppercase">

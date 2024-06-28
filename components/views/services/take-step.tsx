@@ -7,7 +7,7 @@ const TakeStep = () => {
   return (
     <section className="pb-12 lg:pb-24 bg-stepBg">
       <div className="mx-auto w-full max-w-[72rem] flex flex-col lg:flex-row items-center">
-        <div className='max-w-[40rem] bg-card h-auto mb-6 lg:mb-0'>
+        <div className='max-w-[35.25rem] bg-card h-auto mb-6 lg:mb-0'>
           <Image
             alt="about us"
             src={takeStepBg}

@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
               <a className="flex items-center" href="">
                 <MapPin className="text-highBlue" />
                 <span className="ml-2 lg:ml-3">
-                  4, Agbelura Close, beside SAO petrol station, Challenge, Ibadan.
+                  4, Agbelura Close, Beside SAO Petrol Station, Challenge, Ibadan.
                 </span>
               </a>
             </li>
@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
               <div className="ml-2 lg:ml-3 flex items-center">
                 <a href="">+234 803 475 3296</a>
                 <span className="mx-1">/</span>
-                <a href="">+234 807 998 8544</a>
+                <a href="">+234 903 987 0408</a>
               </div>
             </li>
           </ul>
