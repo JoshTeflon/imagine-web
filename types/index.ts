@@ -40,3 +40,8 @@ export interface Review {
   role: string
   comment: string
 }
+
+export interface GalleryInterface {
+  label?: string
+  src: StaticImageData
+}

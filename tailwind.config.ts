@@ -27,6 +27,8 @@ const config: Config = {
         'serviceCard': "0px 8px 4px 0px #0000001F",
         'hoverServiceCard': "0px 6px 22px -20px #00000059",
         'hoverSkillCard': "0px 8px 35px -20px #6B91CD73",
+        'custom-lg': '0 10px 20px rgba(0, 0, 0, 0.2)',
+        'custom-md': '0 5px 10px rgba(0, 0, 0, 0.2)',
       },
     },
   },

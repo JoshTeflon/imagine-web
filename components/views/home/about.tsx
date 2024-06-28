@@ -44,7 +44,7 @@ const About: React.FC = () => {
             ))
           }
         </div>
-        <div className='max-w-[40rem] h-auto mb-6 lg:mb-0 rounded-xl'>
+        <div className='max-w-[40rem] lg:max-w-[30rem] xl:max-w-[40rem] h-auto mb-6 lg:mb-0 rounded-xl'>
           <Image
             alt="about us"
             src={homeAbout}

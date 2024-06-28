@@ -1,3 +1,8 @@
+import Image from "next/image";
+
+import { gallery } from "@/lib";
+import { GalleryInterface } from "@/types";
+
 const OurGallery: React.FC = () => {
   return (
     <section className="w-full mb-12 lg:mb-24">
@@ -9,11 +14,22 @@ const OurGallery: React.FC = () => {
           className="flex flex-wrap items-center justify-center gap-y-8 md:gap-x-[1.625rem]"
         >
           {
-            [...Array(5)]?.map((item: number) => (
+            gallery?.map((item: GalleryInterface, idx: number) => (
               <div
-                key={item}
+                key={item?.label ?? `gallery-${idx}`}
                 className="max-w-[22.9rem] w-full h-[13.75rem] bg-card"
-              ></div>
+              >
+                <Image
+                  alt={item?.label ?? `gallery-${idx}`}
+                  src={item.src}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}
+                  priority
+                />
+              </div>
             ))
           }
         </div>

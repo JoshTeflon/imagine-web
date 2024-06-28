@@ -1,5 +1,5 @@
 import { Email, Facebook, Instagram, Linkedin } from "@/components/icons";
-import { AboutDetails, NavItem, Review, Service, Skill, SocialLinks, Training } from "@/types";
+import { AboutDetails, GalleryInterface, NavItem, Review, Service, Skill, SocialLinks, Training } from "@/types";
 
 import ictBusinessEducation from "@/assets/ictBusinessEducation.png";
 import databaseManagement from "@/assets/databaseManagement.png";
@@ -50,6 +50,11 @@ import businessPlanningService from "@/assets/businessPlanningService.png";
 import leadAuditorService from "@/assets/leadAuditorService.png";
 import leadImplementerService from "@/assets/leadImplementerService.png";
 import ccbaTrainingService from "@/assets/ccbaTrainingService.png";
+import GalleryOne from "@/assets/gallery1.png";
+import GalleryTwo from "@/assets/gallery2.png";
+import GalleryThree from "@/assets/gallery3.png";
+import GalleryFour from "@/assets/gallery4.png";
+import GalleryFive from "@/assets/gallery5.png";
 
 export const navItems: NavItem[] = [
   {
@@ -359,4 +364,27 @@ export const reviews: Review[] = [
     role: "Project Manager",
     comment: "The PMP course was a game-changer for my career. IMAGINE INTEGRATED SYSTEMS' training equipped me with the necessary skills to lead projects effectively, and I'm now a certified Project Management Professional."
   }
+];
+
+export const gallery: GalleryInterface[] = [
+  {
+    label: 'Gallery One',
+    src: GalleryOne
+  },
+  {
+    label: 'Gallery Two',
+    src: GalleryTwo
+  },
+  {
+    label: 'Gallery Three',
+    src: GalleryThree
+  },
+  {
+    label: 'Gallery Four',
+    src: GalleryFour
+  },
+  {
+    label: 'Gallery Five',
+    src: GalleryFive
+  },
 ];
